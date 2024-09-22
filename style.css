@@ -9,15 +9,31 @@ header {
     text-shadow: 0 0 10px yellow;
     padding: 20px;
     border: groove 10px gray;
+    transition: 0.3s;
 }
+
+header div:hover {
+    filter: drop-shadow(0 0 10 cyan);
+}
+
+header:hover {
+    box-shadow: 0 0 40px cyan inset;
+}
+
 header span {
     text-align:left;
-    font-size: 20px
+    font-size: 20px;
+    transition: 0.3s;
 }
 header div.Subtitles {
     font-size: 16px;
     color: red;
     filter: drop-shadow(0 0 5px red);
+    transition: 0.3s;
+}
+
+header div.Subtitles:hover {
+    filter: drop-shadow(0 0 5px yellow);
 }
 
 nav {
@@ -25,15 +41,54 @@ nav {
     background-image: linear-gradient(to right, black, gray, black); 
     border-bottom: solid gray;
     border-radius: 10px; 
+    overflow: hidden;
 }
-nav div {
+nav a, nav.Other a {
     flex: 1;
     margin: auto auto;
     text-align: center;
     padding: 10px;
-    color: white;
-    border-right: solid white;
+    color: rgb(243, 241, 241);
+    border-right: solid rgb(243, 241, 241);
+    text-decoration: none;
+    font-family: impact;
+    font-size: 32px;
+    filter: drop-shadow(0 0 30px gray);
+    transition: 0.3s;
+    
 }
-nav div:last-child {
+nav a:last-child {
     border-right: none;
+}
+
+nav a:hover {
+    box-shadow: 0 0 10px white inset;
+}
+
+nav.Other {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: linear-gradient(to right, darkred, red, darkred);
+}
+nav.Other a {
+    font-size: 16px; 
+}
+
+nav.Other a:hover {
+    border-radius: 10px;
+    box-shadow: 0 0 20px lightcoral inset;
+}
+nav.Other a:last-child {
+    font-size: 10px;
+    padding: 5px;
+}
+
+.activesite {
+    background-color: rgb(75, 71, 71); 
+    box-shadow: 0 0 15px black inset;
+}
+
+nav.Other .activesite {
+    background-color: darkred; 
+    box-shadow: 0 0 15px rgb(88, 5, 5) inset;
 }
