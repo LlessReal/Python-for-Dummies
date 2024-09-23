@@ -1,5 +1,7 @@
 body {
     background-image: linear-gradient(to right, lightblue, rgb(139, 139, 216));
+    min-height: 100vh;
+    
 }
 header {
     background-image: linear-gradient(to right,darkblue, rgb(11, 11, 45), darkblue);
@@ -91,4 +93,22 @@ nav.Other a:last-child {
 nav.Other .activesite {
     background-color: darkred; 
     box-shadow: 0 0 15px rgb(88, 5, 5) inset;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100%;
+    background: gray;
+    color: white;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-image: linear-gradient(to right, black, gray);
+    padding: 20px;
+}
+
+footer .heading {
+    font: 40px "Impact", sans-serif;
 }
