@@ -1,7 +1,7 @@
 body {
     background-image: linear-gradient(to right, lightblue, rgb(139, 139, 216));
     min-height: 100vh;
-    
+    margin: 0;
 }
 header {
     background-image: linear-gradient(to right,darkblue, rgb(11, 11, 45), darkblue);
